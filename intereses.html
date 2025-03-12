@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-key="intereses_title">Sitios de Interés - Apartamento Esencia Sevilla</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" data-key="navbar_brand">Apartamento Esencia Sevilla</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-key="nav_home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html" data-key="nav_gallery">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="reservas.html" data-key="nav_booking">Reservas</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendario.html" data-key="nav_calendar">Calendario</a></li>
+          <li class="nav-item"><a class="nav-link" href="chat.html" data-key="nav_chat">Chat IA</a></li>
+          <li class="nav-item"><a class="nav-link" href="ubicacion.html" data-key="nav_location">Ubicación</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="intereses.html" data-key="nav_interests">Sitios de Interés</a></li>
+          <li class="nav-item"><a class="nav-link" href="mapa_interactivo.html" data-key="nav_map">Mapa</a></li>
+        </ul>
+        <select id="languageSwitcher" class="form-select form-select-sm">
+          <option value="es" selected>ES</option>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="zh">ZH</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+  
+  <header class="bg-dark text-white text-center py-5">
+    <div class="container">
+      <h1 data-key="intereses_header">Sitios de Interés en Sevilla</h1>
+      <p data-key="intereses_subheader">Descubre los mejores planes y lugares para tu visita</p>
+    </div>
+  </header>
+
+  <section class="container my-5">
+    <h2 class="mb-4" data-key="intereses_visit_title">Sitios para Visitar</h2>
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/giralda.jpg" class="card-img-top" height="350px" alt="La Giralda">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_giralda_title">La Giralda</h5>
+            <p class="card-text">
+              <strong data-key="intereses_entrada_label">Entrada:</strong> 
+              <span data-key="intereses_giralda_entrada">Alrededor de 10€</span><br>
+              <strong data-key="intereses_tiempo_label">Tiempo de visita:</strong> 
+              <span data-key="intereses_giralda_tiempo">1-2 horas</span><br>
+              <strong data-key="intereses_horario_label">Horario:</strong> 
+              <span data-key="intereses_giralda_horario">10:00 - 17:00</span><br>
+              <strong data-key="intereses_desc_label">Descripción:</strong> 
+              <span data-key="intereses_giralda_desc">
+                El antiguo minarete de la mezquita, hoy campanario de la Catedral, es un símbolo icónico de la ciudad.
+              </span>
+            </p>
+            <a href="https://www.google.com/maps?q=La+Giralda,+Sevilla" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/alcazar.jpg" class="card-img-top" height="350px" alt="Real Alcázar">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_alcazar_title">Real Alcázar</h5>
+            <p class="card-text">
+              <strong data-key="intereses_entrada_label">Entrada:</strong> 
+              <span data-key="intereses_alcazar_entrada">12-15€</span><br>
+              <strong data-key="intereses_tiempo_label">Tiempo de visita:</strong> 
+              <span data-key="intereses_alcazar_tiempo">2-3 horas</span><br>
+              <strong data-key="intereses_horario_label">Horario:</strong> 
+              <span data-key="intereses_alcazar_horario">9:30 – 19:00</span><br>
+              <strong data-key="intereses_desc_label">Descripción:</strong> 
+              <span data-key="intereses_alcazar_desc">
+                Un conjunto de palacios rodeados por una muralla, famoso por su arquitectura mudéjar y jardines.
+              </span>
+            </p>
+            <a href="https://www.google.com/maps?q=Real+Alcázar,+Sevilla" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/plazaespanya.jpg" class="card-img-top" height="350px" alt="Plaza de España">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_plazaespanya_title">Plaza de España</h5>
+            <p class="card-text">
+              <strong data-key="intereses_entrada_label">Entrada:</strong>
+              <span data-key="intereses_plazaespanya_entrada">Gratuita</span><br>
+              <strong data-key="intereses_tiempo_label">Tiempo de visita:</strong>
+              <span data-key="intereses_plazaespanya_tiempo">1 hora</span><br>
+              <strong data-key="intereses_desc_label">Descripción:</strong> 
+              <span data-key="intereses_plazaespanya_desc">
+                Construida para la Exposición Iberoamericana de 1929, la plaza destaca por su arquitectura y sus bancos de cerámica.
+              </span>
+            </p>
+            <a href="https://www.google.com/maps?q=Plaza+de+España,+Sevilla" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/setas.jpg" class="card-img-top" height="350px" alt="Las Setas">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_setas_title">Metropol Parasol (Las Setas)</h5>
+            <p class="card-text">
+              <strong data-key="intereses_entrada_label">Entrada:</strong>
+              <span data-key="intereses_setas_entrada">3-4€</span><br>
+              <strong data-key="intereses_tiempo_label">Tiempo de visita:</strong>
+              <span data-key="intereses_setas_tiempo">1 hora</span><br>
+              <strong data-key="intereses_desc_label">Descripción:</strong>
+              <span data-key="intereses_setas_desc">
+                Moderna estructura de madera que ofrece vistas panorámicas y una experiencia cultural única.
+              </span>
+            </p>
+            <a href="https://www.google.com/maps?q=Metropol+Parasol,+Sevilla" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="mb-4" data-key="intereses_kids_title">Actividades con Niños</h2>
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/islamagica1.jpg" class="card-img-top" height="350px" alt="Isla Mágica">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_islamagica_title">Isla Mágica</h5>
+            <p class="card-text">
+              <strong data-key="intereses_entrada_label">Entrada:</strong> 
+              <span data-key="intereses_islamagica_entrada">Desde 25€ (según temporada)</span><br>
+              <strong data-key="intereses_desc_label">Descripción:</strong> 
+              <span data-key="intereses_islamagica_desc">
+                Parque temático con atracciones, espectáculos y áreas para disfrutar con los más pequeños.
+              </span>
+            </p>
+            <a href="https://www.google.com/maps?q=Isla+M%C3%A1gica" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/acuariodesevilla.jpg" class="card-img-top" height="350px" alt="Acuario de Sevilla">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_acuario_title">Acuario de Sevilla</h5>
+            <p class="card-text">
+              <strong data-key="intereses_entrada_label">Entrada:</strong> 
+              <span data-key="intereses_acuario_entrada">17€ adultos / 12€ niños</span><br>
+              <strong data-key="intereses_desc_label">Descripción:</strong> 
+              <span data-key="intereses_acuario_desc">
+                Descubre la vida marina con más de 400 especies y un tanque oceánico espectacular.
+              </span>
+            </p>
+            <a href="https://www.google.com/maps?q=Acuario+de+Sevilla" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/marialuisa.jpg" class="card-img-top" height="350px" alt="Parque de María Luisa">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_marialuisa_title">Parque de María Luisa</h5>
+            <p class="card-text">
+              <strong data-key="intereses_entrada_label">Entrada:</strong> 
+              <span data-key="intereses_marialuisa_entrada">Gratuita</span><br>
+              <strong data-key="intereses_desc_label">Descripción:</strong> 
+              <span data-key="intereses_marialuisa_desc">
+                Extensos jardines para pasear con los niños, alquilar bicicletas familiares o dar un paseo en coche de caballos.
+              </span>
+            </p>
+            <a href="https://www.google.com/maps?q=Parque+de+Mar%C3%ADa+Luisa,+Sevilla" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="mb-4" data-key="intereses_food_title">Sitios para Comer</h2>
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/MercadoLonjadelBarranco.avif" class="card-img-top" height="350px" alt="Mercado Lonja del Barranco">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_lonja_title">Mercado Lonja del Barranco</h5>
+            <p class="card-text">
+              <strong data-key="intereses_estilo_label">Estilo:</strong>
+              <span data-key="intereses_lonja_estilo">Mercado gastronómico con puestos variados</span>.<br>
+              <strong data-key="intereses_desc_label">Descripción:</strong>
+              <span data-key="intereses_lonja_desc">
+                Ideal para probar tapas, pescados, mariscos y otros platos típicos en un entorno moderno junto al río.
+              </span>
+            </p>
+            <a href="https://www.google.com/maps?q=Mercado+Lonja+del+Barranco" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/mercadotriana.jpg" class="card-img-top" height="350px" alt="Mercado de Triana">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_mercadotriana_title">Mercado de Triana</h5>
+            <p class="card-text">
+              <strong data-key="intereses_estilo_label">Estilo:</strong>
+              <span data-key="intereses_mercadotriana_estilo">Bares de tapas y cocina tradicional</span>.<br>
+              <strong data-key="intereses_desc_label">Descripción:</strong>
+              <span data-key="intereses_mercadotriana_desc">
+                Famoso por su ambiente local, con multitud de bares y restaurantes para probar el auténtico sabor sevillano.
+              </span>
+            </p>
+            <a href="https://maps.app.goo.gl/38oUARe2UThnLnxV6" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/bardanubio.jpg" class="card-img-top" height="350px" alt="Bar Cafetería Danubio">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_danubio_title">Bar Cafetería Danubio</h5>
+            <p class="card-text">
+              <strong data-key="intereses_precio_label">Precio:</strong> 
+              <span data-key="intereses_danubio_precio">Entre 10-20€ por persona</span>.<br>
+              <strong data-key="intereses_recomendacion_label">Recomendación:</strong> 
+              <span data-key="intereses_danubio_reco">
+                Sus famosos desayunos de tostadas con jamón y tomate, y su café.
+              </span><br>
+              <strong data-key="intereses_desc_label">Descripción:</strong> 
+              <span data-key="intereses_danubio_desc">
+                Un bar cafetería con ambiente cercano, ideal para desayunos y meriendas.
+              </span>
+            </p>
+            <a href="https://maps.app.goo.gl/7AurCmGg7jKkoBXz9" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container my-5">
+    <h2 class="mb-4" data-key="intereses_museo_title">Museos</h2>
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/museobellasartes.jpg" class="card-img-top" height="350px" alt="Museo de Bellas Artes">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_bellasartes_title">Museo de Bellas Artes</h5>
+            <p class="card-text">
+              <strong data-key="intereses_entrada_label">Entrada:</strong>
+              <span data-key="intereses_bellasartes_entrada">1,50€ (ciudadanos UE)</span>.<br>
+              <strong data-key="intereses_desc_label">Descripción:</strong>
+              <span data-key="intereses_bellasartes_desc">
+                Segunda pinacoteca más importante de España, con obras de Murillo, Zurbarán y otros maestros.
+              </span>
+            </p>
+            <a href="https://www.google.com/maps?q=Museo+de+Bellas+Artes+Sevilla" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/caac.jpg" class="card-img-top" height="350px" alt="Centro Andaluz de Arte Contemporáneo">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_caac_title">Centro Andaluz de Arte Contemporáneo (CAAC)</h5>
+            <p class="card-text">
+              <strong data-key="intereses_entrada_label">Entrada:</strong>
+              <span data-key="intereses_caac_entrada">3€ (gratuito ciertos días)</span>.<br>
+              <strong data-key="intereses_desc_label">Descripción:</strong>
+              <span data-key="intereses_caac_desc">
+                Ubicado en el Monasterio de la Cartuja, exhibe exposiciones de arte contemporáneo y eventos culturales.
+              </span>
+            </p>
+            <a href="https://www.google.com/maps?q=Centro+Andaluz+de+Arte+Contempor%C3%A1neo" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/CentrodeCerámica.jpg" class="card-img-top" height="350px" alt="Centro de Cerámica de Triana">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_ceramica_title">Centro de Cerámica de Triana</h5>
+            <p class="card-text">
+              <strong data-key="intereses_entrada_label">Entrada:</strong>
+              <span data-key="intereses_ceramica_entrada">2,10€ (tarifa general)</span><br>
+              <strong data-key="intereses_desc_label">Descripción:</strong>
+              <span data-key="intereses_ceramica_desc">
+                Un espacio que muestra la tradición de la cerámica de Triana con piezas históricas y artesanía local.
+              </span>
+            </p>
+            <a href="https://maps.app.goo.gl/UnaFqUiQsAEk3CyTA" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="src/sitiosInteres/MuseodelBaileFlamenco.jpg" class="card-img-top" height="350px" alt="Museo del Baile Flamenco">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_flamenco_title">Museo del Baile Flamenco</h5>
+            <p class="card-text">
+              <strong data-key="intereses_entrada_label">Entrada:</strong>
+              <span data-key="intereses_flamenco_entrada">Desde 10€ (dependiendo del espectáculo)</span><br>
+              <strong data-key="intereses_desc_label">Descripción:</strong>
+              <span data-key="intereses_flamenco_desc">
+                Un espacio donde se fusionan las exposiciones y espectáculos de flamenco con la historia andaluza.
+              </span>
+            </p>
+            <a href="https://www.google.com/maps?q=Museo+del+Baile+Flamenco+Sevilla" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
+  <section class="container my-5">
+    <h2 class="mb-4" data-key="intereses_more_title">Más Sitios Recomendados</h2>
+    <div class="row gy-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="src/sitiosInteres/TorreOro.avif" class="card-img-top" height="350px" alt="Torre del Oro">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_torreoro_title">Torre del Oro</h5>
+            <p class="card-text" data-key="intereses_torreoro_desc">
+              Famosa torre defensiva junto al río Guadalquivir. Alberga un pequeño museo naval.
+            </p>
+            <a href="https://www.google.com/maps?q=Torre+del+Oro,+Sevilla" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <img src="src/sitiosInteres/BasilicaMacarena.jpg" class="card-img-top" height="350px" alt="Basílica de la Macarena">
+          <div class="card-body">
+            <h5 class="card-title" data-key="intereses_macarena_title">Basílica de la Macarena</h5>
+            <p class="card-text" data-key="intereses_macarena_desc">
+              Templo religioso donde se venera a la Virgen de la Esperanza Macarena, muy querida en Sevilla.
+            </p>
+            <a href="https://www.google.com/maps?q=Basílica+de+la+Macarena,+Sevilla" target="_blank" class="btn btn-primary" data-key="intereses_ver_maps">
+              Ver en Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p data-key="footer_text">© 2025 Apartamento Esencia Sevilla. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

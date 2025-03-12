@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title data-key="index_title">Apartamento Turístico en Sevilla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" data-key="navbar_brand">Apartamento Esencia Sevilla</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html" data-key="nav_home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html" data-key="nav_gallery">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="reservas.html" data-key="nav_booking">Reservas</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendario.html" data-key="nav_calendar">Calendario</a></li>
+          <li class="nav-item"><a class="nav-link" href="chat.html" data-key="nav_chat">Chat IA</a></li>
+          <li class="nav-item"><a class="nav-link" href="ubicacion.html" data-key="nav_location">Ubicación</a></li>
+          <li class="nav-item"><a class="nav-link" href="intereses.html" data-key="nav_interests">Sitios de Interés</a></li>
+          <li class="nav-item"><a class="nav-link" href="mapa_interactivo.html" data-key="nav_map">Mapa</a></li>
+        </ul>
+        <select id="languageSwitcher" class="form-select form-select-sm">
+          <option value="es" selected>ES</option>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="zh">ZH</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white text-center py-5 bg-overlay">
+    <div class="container">
+      <h1 data-key="index_hero_title">Descubre Sevilla desde nuestro apartamento</h1>
+      <p data-key="index_hero_subtitle">Confort, comodidad y una ubicación inmejorable</p>
+      <a href="https://www.booking.com/" class="btn btn-light mt-3" target="_blank" data-key="index_hero_btn">
+        Haz tu reserva
+      </a>
+    </div>
+  </header>
+
+  <section id="sobre" class="container my-5">
+    <h2 class="text-center" data-key="index_about_title">Sobre el Apartamento</h2>
+    <p class="text-center" data-key="index_about_subtitle">
+      Ubicado en el corazón de Sevilla, nuestro apartamento ofrece todo lo necesario...
+    </p>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="galeria.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="src/gallery/1salon1.jpg" class="card-img-top" alt="Imagen 1">
+            <div class="card-body">
+              <h5 class="card-title" data-key="index_about_item1_title">Comodidad</h5>
+              <p class="card-text" data-key="index_about_item1_text">Disfruta de todas las comodidades modernas en un entorno histórico.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="ubicacion.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="src/assets/Ubicacion.png" class="card-img-top" alt="Imagen 2">
+            <div class="card-body">
+              <h5 class="card-title" data-key="index_about_item2_title">Ubicación</h5>
+              <p class="card-text" data-key="index_about_item2_text">Descubre dónde estamos y explora los puntos turísticos de Sevilla.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="calendario.html" class="text-decoration-none text-dark">
+          <div class="card">
+            <img src="src/assets/Calendario.png" class="card-img-top" alt="Imagen 3">
+            <div class="card-body">
+              <h5 class="card-title" data-key="index_about_item3_title">Calendario</h5>
+              <p class="card-text" data-key="index_about_item3_text">
+                Consulta los días disponibles para reservar nuestro apartamento.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p data-key="footer_text">© 2025 Apartamento Esencia Sevilla. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

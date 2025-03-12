@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title data-key="reservas_title">Reservas - Apartamento Esencia Sevilla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" data-key="navbar_brand">Apartamento Esencia Sevilla</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-key="nav_home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html" data-key="nav_gallery">Galería</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="reservas.html" data-key="nav_booking">Reservas</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendario.html" data-key="nav_calendar">Calendario</a></li>
+          <li class="nav-item"><a class="nav-link" href="chat.html" data-key="nav_chat">Chat IA</a></li>
+          <li class="nav-item"><a class="nav-link" href="ubicacion.html" data-key="nav_location">Ubicación</a></li>
+          <li class="nav-item"><a class="nav-link" href="intereses.html" data-key="nav_interests">Sitios de Interés</a></li>
+          <li class="nav-item"><a class="nav-link" href="mapa_interactivo.html" data-key="nav_map">Mapa</a></li>
+        </ul>
+        <select id="languageSwitcher" class="form-select form-select-sm">
+          <option value="es" selected>ES</option>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="zh">ZH</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-info text-white text-center py-5">
+    <div class="container">
+      <h1 data-key="reservas_header">Realiza tu Reserva</h1>
+      <p data-key="reservas_subheader">Reserva y paga tu estancia de manera rápida y segura</p>
+    </div>
+  </header>
+
+  <!-- Formulario de Reserva -->
+  <section class="container my-5">
+    <form id="reservaForm">
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label" data-key="reservas_label_name">Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label" data-key="reservas_label_email">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="fechaEntrada" class="form-label" data-key="reservas_label_checkin">Fecha de entrada</label>
+          <input type="date" class="form-control" id="fechaEntrada" required>
+        </div>
+        <div class="col-md-6">
+          <label for="fechaSalida" class="form-label" data-key="reservas_label_checkout">Fecha de salida</label>
+          <input type="date" class="form-control" id="fechaSalida" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="personas" class="form-label" data-key="reservas_label_personas">Número de personas</label>
+        <input type="number" class="form-control" id="personas" min="1" required>
+      </div>
+
+      <h4 class="mt-4" data-key="reservas_pay_info">Información de Pago</h4>
+      <div class="mb-3">
+        <label for="tarjeta" class="form-label" data-key="reservas_card_number">Número de tarjeta</label>
+        <input type="text" class="form-control" id="tarjeta" placeholder="1234 5678 9012 3456" required>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="expiracion" class="form-label" data-key="reservas_card_exp">Fecha de expiración</label>
+          <input type="text" class="form-control" id="expiracion" placeholder="MM/AA" required>
+        </div>
+        <div class="col-md-6">
+          <label for="cvv" class="form-label" data-key="reservas_card_cvv">CVV</label>
+          <input type="text" class="form-control" id="cvv" placeholder="123" required>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary" data-key="reservas_btn_submit">Pagar y Confirmar Reserva</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p data-key="footer_text">© 2025 Apartamento Esencia Sevilla. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/translations.js"></script>
+  <script>
+    document.getElementById('reservaForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Reserva y pago procesados correctamente');
+      // Aquí integrar con pasarela de pago real si lo deseas.
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const langSelect = document.getElementById("languageSwitcher");
+      const savedLang = localStorage.getItem("preferredLang") || "es";
+      langSelect.value = savedLang;
+      changeLanguage(savedLang);
+
+      langSelect.addEventListener("change", () => {
+        const selectedLang = langSelect.value;
+        changeLanguage(selectedLang);
+        localStorage.setItem("preferredLang", selectedLang);
+      });
+    });
+  </script>
+</body>
+</html>

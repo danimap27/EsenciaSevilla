@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title data-key="calendario_title">Calendario - Apartamento Esencia Sevilla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html" data-key="navbar_brand">Apartamento Esencia Sevilla</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html" data-key="nav_home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="galeria.html" data-key="nav_gallery">Galería</a></li>
+          <li class="nav-item"><a class="nav-link" href="reservas.html" data-key="nav_booking">Reservas</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="calendario.html" data-key="nav_calendar">Calendario</a></li>
+          <li class="nav-item"><a class="nav-link" href="chat.html" data-key="nav_chat">Chat IA</a></li>
+          <li class="nav-item"><a class="nav-link" href="ubicacion.html" data-key="nav_location">Ubicación</a></li>
+          <li class="nav-item"><a class="nav-link" href="intereses.html" data-key="nav_interests">Sitios de Interés</a></li>
+          <li class="nav-item"><a class="nav-link" href="mapa_interactivo.html" data-key="nav_map">Mapa</a></li>
+        </ul>
+        <select id="languageSwitcher" class="form-select form-select-sm">
+          <option value="es" selected>ES</option>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+          <option value="zh">ZH</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-warning text-dark text-center py-5">
+    <div class="container">
+      <h1 data-key="calendario_header">Calendario y Precios</h1>
+      <p data-key="calendario_subheader">Consulta la disponibilidad y los precios</p>
+    </div>
+  </header>
+
+  <section class="container my-5">
+    <table class="table table-bordered" id="calendar">
+      <thead>
+        <tr>
+          <th data-key="calendario_dia_lun">Lun</th>
+          <th data-key="calendario_dia_mar">Mar</th>
+          <th data-key="calendario_dia_mie">Mié</th>
+          <th data-key="calendario_dia_jue">Jue</th>
+          <th data-key="calendario_dia_vie">Vie</th>
+          <th data-key="calendario_dia_sab">Sáb</th>
+          <th data-key="calendario_dia_dom">Dom</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="disponible">
+            <span class="day-number">1</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="ocupado">
+            <span class="day-number">2</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">3</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">4</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="ocupado">
+            <span class="day-number">5</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="disponible">
+            <span class="day-number">6</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="ocupado">
+            <span class="day-number">7</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">8</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">9</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="ocupado">
+            <span class="day-number">10</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">11</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">12</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="disponible">
+            <span class="day-number">13</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">14</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="ocupado">
+            <span class="day-number">15</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">16</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="ocupado">
+            <span class="day-number">17</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">18</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">19</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="ocupado">
+            <span class="day-number">20</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">21</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">22</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="ocupado">
+            <span class="day-number">23</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">24</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">25</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="ocupado">
+            <span class="day-number">26</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="disponible">
+            <span class="day-number">27</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="ocupado">
+            <span class="day-number">28</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">29</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">30</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td class="disponible">
+            <span class="day-number">31</span>
+            <span class="precio" data-key="calendario_precio">100€ / noche</span>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p data-key="footer_text">© 2025 Apartamento Esencia Sevilla. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/translations.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
